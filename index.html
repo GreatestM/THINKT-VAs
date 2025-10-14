@@ -5,65 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ThinkT Virtual Assistants - Transform Your Business Operations</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Hero background image */
-    .hero-background {
-      background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80');
-      background-size: cover;
-      background-position: center;
-      filter: blur(3px);
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-    }
-    .hero {
-      position: relative;
-    }
-    
-    /* Stats section styling */
-    .stats-section {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 40px;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border-radius: 15px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    
-    .stat-item {
-      text-align: center;
-      color: white;
-    }
-    
-    .stat-number {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 5px;
-      color: #00d4ff;
-    }
-    
-    .stat-label {
-      font-size: 1rem;
-      opacity: 0.9;
-    }
-    
-    @media (max-width: 768px) {
-      .stats-section {
-        flex-direction: column;
-        gap: 20px;
-      }
-      .stat-number {
-        font-size: 2rem;
-      }
-    }
-  </style>
 </head>
 <body>
+  <!-- Navigation with Dropdown Menu -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2>ThinkT Virtual Assistants</h2>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+          <a href="#services" class="dropbtn">Services ▾</a>
+          <div class="dropdown-content">
+            <a href="#admin">Administrative Support</a>
+            <a href="#customer">Customer Service</a>
+            <a href="#marketing">Digital Marketing</a>
+            <a href="#bookkeeping">Bookkeeping</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#about" class="dropbtn">About ▾</a>
+          <div class="dropdown-content">
+            <a href="#team">Our Team</a>
+            <a href="#mission">Our Mission</a>
+            <a href="#values">Our Values</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#resources" class="dropbtn">Resources ▾</a>
+          <div class="dropdown-content">
+            <a href="#blog">Blog</a>
+            <a href="#case-studies">Case Studies</a>
+            <a href="#faq">FAQ</a>
+          </div>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero-background"></div>
@@ -71,7 +52,7 @@
       <div class="hero-content">
         <h1 class="hero-title">Transform Your Business with Expert Virtual Assistance</h1>
         <p class="hero-subtitle">Streamline operations, boost productivity, and focus on growth while we handle the rest. Professional virtual assistance tailored to your success.</p>
-        <a href="#contact" class="cta-button">Get Started Today</a>
+        <a class="cta-button" href="#contact">Get Started Today</a>
         
         <!-- Animated Stats Section -->
         <div class="stats-section">
@@ -91,6 +72,197 @@
       </div>
     </div>
   </section>
+
+  <!-- Services Section with Hover Reveal -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">📋</div>
+          <h3>Administrative Support</h3>
+          <p class="service-preview">Professional administrative assistance...</p>
+          <div class="service-details">
+            <p>Email management, calendar scheduling, data entry, document preparation, travel arrangements, and comprehensive administrative support to keep your business running smoothly.</p>
+          </div>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">💬</div>
+          <h3>Customer Service</h3>
+          <p class="service-preview">Exceptional customer support...</p>
+          <div class="service-details">
+            <p>24/7 customer support, inquiry handling, complaint resolution, live chat management, phone support, and building lasting relationships with your customers.</p>
+          </div>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3>Digital Marketing</h3>
+          <p class="service-preview">Grow your online presence...</p>
+          <div class="service-details">
+            <p>Social media management, content creation, email campaigns, SEO optimization, analytics tracking, and strategic marketing to boost your brand visibility.</p>
+          </div>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">💰</div>
+          <h3>Bookkeeping</h3>
+          <p class="service-preview">Accurate financial management...</p>
+          <div class="service-details">
+            <p>Invoice processing, expense tracking, financial reporting, payroll support, accounts reconciliation, and maintaining organized financial records.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section with Hover Reveal -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Expert Team</h3>
+          <p class="about-preview">Highly skilled professionals...</p>
+          <div class="about-details">
+            <p>Our team consists of experienced virtual assistants with diverse backgrounds in business administration, customer service, marketing, and finance. Each member is carefully selected and trained to deliver excellence.</p>
+          </div>
+        </div>
+        
+        <div class="about-card">
+          <h3>Flexible Solutions</h3>
+          <p class="about-preview">Customized to your needs...</p>
+          <div class="about-details">
+            <p>We understand that every business is unique. Our services are fully customizable, scalable, and designed to adapt to your specific requirements, industry, and growth stage.</p>
+          </div>
+        </div>
+        
+        <div class="about-card">
+          <h3>Cost-Effective</h3>
+          <p class="about-preview">Maximize your budget...</p>
+          <div class="about-details">
+            <p>Save up to 70% on operational costs compared to hiring full-time staff. No overhead expenses, benefits, or office space needed. Pay only for the services you use.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section with Hover Reveal -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Clients Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-preview">
+            <p>"ThinkT has transformed our business operations..."</p>
+            <p class="client-name">- Sarah Johnson</p>
+          </div>
+          <div class="testimonial-details">
+            <p>"ThinkT has transformed our business operations completely. Their virtual assistants are professional, efficient, and always available when we need them. We've seen a 40% increase in productivity since partnering with them. Highly recommended!"</p>
+            <p class="client-info">- Sarah Johnson, CEO of TechStart Inc.</p>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-preview">
+            <p>"Outstanding service and incredible value..."</p>
+            <p class="client-name">- Michael Chen</p>
+          </div>
+          <div class="testimonial-details">
+            <p>"Outstanding service and incredible value for money. The team at ThinkT handles everything from customer inquiries to social media management seamlessly. It's like having a full-time team at a fraction of the cost. Game changer for our startup!"</p>
+            <p class="client-info">- Michael Chen, Founder of GrowthLabs</p>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-preview">
+            <p>"Professional, reliable, and highly skilled..."</p>
+            <p class="client-name">- Emily Rodriguez</p>
+          </div>
+          <div class="testimonial-details">
+            <p>"Professional, reliable, and highly skilled virtual assistants. They've helped us scale our business without the overhead of hiring full-time staff. The quality of work is consistently excellent, and communication is always clear and prompt."</p>
+            <p class="client-info">- Emily Rodriguez, Operations Manager at BrightPath Solutions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>📧 Email: info@thinkt-va.com</p>
+          <p>📞 Phone: +1 (555) 123-4567</p>
+          <p>📍 Location: Remote Worldwide</p>
+        </div>
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>ThinkT Virtual Assistants</h3>
+        <p>Empowering businesses worldwide with professional virtual assistance services. Transform your operations and focus on what matters most.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#admin">Administrative Support</a></li>
+          <li><a href="#customer">Customer Service</a></li>
+          <li><a href="#marketing">Digital Marketing</a></li>
+          <li><a href="#bookkeeping">Bookkeeping</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Connect With Us</h4>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+          <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
+          <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+        </div>
+        <p class="footer-contact">📧 info@thinkt-va.com<br>📞 +1 (555) 123-4567</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 ThinkT Virtual Assistants. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
 
   <!-- JavaScript for Animation -->
   <script>
