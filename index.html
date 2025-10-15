@@ -3,182 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ThinkT Virtual Assistants - Transform Your Business Operations</title>
+  <title>ThinkT Virtual Assistants</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation with Dropdown Menu -->
-  <nav class="main-nav">
-    <div class="nav-container">
-      <div class="nav-logo">
-        <h2>ThinkT Virtual Assistants</h2>
-      </div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">ThinkT VAs</div>
       <ul class="nav-menu">
         <li><a href="#home">Home</a></li>
-        <li class="dropdown">
-          <a href="#services" class="dropbtn">Services ▾</a>
-          <div class="dropdown-content">
-            <a href="#admin">Administrative Support</a>
-            <a href="#customer">Customer Service</a>
-            <a href="#marketing">Digital Marketing</a>
-            <a href="#bookkeeping">Bookkeeping</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="#about" class="dropbtn">About ▾</a>
-          <div class="dropdown-content">
-            <a href="#team">Our Team</a>
-            <a href="#mission">Our Mission</a>
-            <a href="#values">Our Values</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="#resources" class="dropbtn">Resources ▾</a>
-          <div class="dropdown-content">
-            <a href="#blog">Blog</a>
-            <a href="#faq">FAQ</a>
-            <a href="#guides">Guides</a>
-          </div>
-        </li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Transform Your Business Operations</h1>
-      <p>Professional virtual assistants delivering excellence in every task</p>
-      <div class="hero-buttons">
-        <a href="#services" class="btn btn-primary">Our Services</a>
-        <a href="#contact" class="btn btn-secondary">Get Started</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section - Why Choose ThinkT? -->
-  <section id="about" class="about-section">
+  <section id="home" class="hero" style="padding-top: 2rem;">
     <div class="container">
-      <h2 class="section-title">Why Choose ThinkT?</h2>
-      <div class="about-grid">
-        <div class="about-card slide-in-left" style="animation-delay: 0.1s;">
-          <div class="card-icon">💼</div>
-          <h3>Professional Excellence</h3>
-          <p>Highly trained virtual assistants committed to delivering exceptional quality in every task. We maintain the highest standards of professionalism.</p>
-        </div>
-        <div class="about-card slide-in-left" style="animation-delay: 0.3s;">
-          <div class="card-icon">🎯</div>
-          <h3>Cost-Effective Solutions</h3>
-          <p>Save on overhead costs while accessing top-tier talent. Our flexible pricing ensures you get premium service at competitive rates.</p>
-        </div>
-        <div class="about-card slide-in-left" style="animation-delay: 0.5s;">
-          <div class="card-icon">⚡</div>
-          <h3>Quick Turnaround</h3>
-          <p>Fast, efficient service delivery without compromising quality. We understand deadlines and work diligently to meet them.</p>
-        </div>
+      <h1 style="color: #222;">Transform Your Business with Professional Virtual Assistants</h1>
+      <p class="hero-subtitle" style="color: #222;">Streamline operations, boost productivity, and focus on what matters most</p>
+      <img src="assets/hero.jpg" alt="Professional virtual assistant workspace" style="max-width: 100%; height: auto; margin: 2rem 0; border-radius: 8px;">
+      <div class="cta-buttons">
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+        <a href="#services" class="btn btn-secondary">Our Services</a>
       </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="services-section">
+  <section id="services" class="services">
     <div class="container">
       <h2 class="section-title">Our Services</h2>
       <div class="services-grid">
-        <div class="service-card" id="admin">
+        <div class="service-card">
           <div class="service-icon">📋</div>
           <h3>Administrative Support</h3>
-          <p>Email management, calendar scheduling, data entry, document preparation, and general office support tasks.</p>
-          <a href="#contact" class="service-link">Learn More →</a>
+          <p>Efficient handling of emails, scheduling, data entry, and document management.</p>
         </div>
-        <div class="service-card" id="customer">
+        <div class="service-card">
           <div class="service-icon">💬</div>
           <h3>Customer Service</h3>
-          <p>Professional customer support, inquiry management, ticket handling, and client relationship management.</p>
-          <a href="#contact" class="service-link">Learn More →</a>
+          <p>Professional customer support through various communication channels.</p>
         </div>
-        <div class="service-card" id="marketing">
+        <div class="service-card">
           <div class="service-icon">📱</div>
+          <h3>Social Media Management</h3>
+          <p>Engaging content creation and community management for your brand.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📊</div>
           <h3>Digital Marketing</h3>
-          <p>Social media management, content creation, email campaigns, SEO optimization, and marketing analytics.</p>
-          <a href="#contact" class="service-link">Learn More →</a>
+          <p>Strategic marketing campaigns to grow your online presence.</p>
         </div>
-        <div class="service-card" id="bookkeeping">
-          <div class="service-icon">💰</div>
+        <div class="service-card">
+          <div class="service-icon">💼</div>
           <h3>Bookkeeping</h3>
-          <p>Financial record maintenance, invoice processing, expense tracking, and basic accounting support.</p>
-          <a href="#contact" class="service-link">Learn More →</a>
+          <p>Accurate financial record-keeping and basic accounting services.</p>
         </div>
+        <div class="service-card">
+          <div class="service-icon">✍️</div>
+          <h3>Content Writing</h3>
+          <p>High-quality content creation for blogs, websites, and marketing materials.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About ThinkT Virtual Assistants</h2>
+      <div class="about-content">
+        <p>At ThinkT Virtual Assistants, we believe in empowering businesses through exceptional remote support services. Our team of skilled professionals is dedicated to helping you achieve more by taking care of time-consuming tasks.</p>
+        <p>With years of combined experience across various industries, we understand the unique challenges businesses face. Our mission is to provide reliable, efficient, and personalized virtual assistant services that drive growth and success.</p>
       </div>
     </div>
   </section>
 
   <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonials-section">
+  <section id="testimonials" class="testimonials">
     <div class="container">
       <h2 class="section-title">What Our Clients Say</h2>
       <div class="testimonials-grid">
         <div class="testimonial-card">
-          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testimonial-text">"ThinkT's virtual assistants have been instrumental in scaling our operations. Their professionalism and efficiency are unmatched!"</p>
-          <div class="testimonial-author">
-            <strong>Sarah Johnson</strong>
-            <span>CEO, TechStartup Inc.</span>
-          </div>
+          <p class="testimonial-text">"ThinkT VAs transformed our business operations. Their attention to detail and professionalism is outstanding!"</p>
+          <p class="testimonial-author">- Sarah Johnson, CEO</p>
         </div>
         <div class="testimonial-card">
-          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testimonial-text">"Working with ThinkT has freed up so much of my time. I can now focus on growing my business while they handle the day-to-day tasks."</p>
-          <div class="testimonial-author">
-            <strong>Michael Chen</strong>
-            <span>Founder, Creative Agency</span>
-          </div>
+          <p class="testimonial-text">"I can finally focus on growing my business while ThinkT handles all the administrative tasks seamlessly."</p>
+          <p class="testimonial-author">- Michael Chen, Entrepreneur</p>
         </div>
         <div class="testimonial-card">
-          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testimonial-text">"The quality of work and attention to detail from ThinkT's team is exceptional. Highly recommend their services!"</p>
-          <div class="testimonial-author">
-            <strong>Emily Rodriguez</strong>
-            <span>Marketing Director</span>
-          </div>
+          <p class="testimonial-text">"The best investment we've made! Professional, reliable, and always exceeding expectations."</p>
+          <p class="testimonial-author">- Emma Davis, Marketing Director</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-content">
-        <h2>Ready to Transform Your Business?</h2>
-        <p>Join hundreds of satisfied clients who have elevated their operations with ThinkT Virtual Assistants</p>
-        <a href="#contact" class="btn btn-primary btn-large">Get Started Today</a>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact-section">
+  <section id="contact" class="contact">
     <div class="container">
       <h2 class="section-title">Get In Touch</h2>
-      <div class="contact-grid">
+      <div class="contact-content">
         <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon">📧</div>
-            <h3>Email Us</h3>
-            <p>info@thinktvirtualassistants.com</p>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">📞</div>
-            <h3>Call Us</h3>
-            <p>+1 (555) 123-4567</p>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">🕐</div>
-            <h3>Business Hours</h3>
-            <p>Monday - Friday: 9AM - 6PM EST</p>
-          </div>
+          <h3>Contact Information</h3>
+          <p>📧 Email: info@thinktvirtualassistants.com</p>
+          <p>📞 Phone: +1 (555) 123-4567</p>
+          <p>📍 Location: Remote - Serving Clients Worldwide</p>
         </div>
         <form class="contact-form">
           <input type="text" placeholder="Your Name" required>
@@ -193,7 +129,8 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-container">
+    <div class="container">
+      <div class="footer-content">
       <div class="footer-section">
         <h3>ThinkT Virtual Assistants</h3>
         <p>Empowering businesses through exceptional virtual assistant services.</p>
